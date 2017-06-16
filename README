@@ -115,3 +115,22 @@ perf script > out.perf
 ./stackcollapse-perf.pl out.perf > out.folded
 ./flamegraph.pl --title="Flame Graph: VPP(v17.07-rc0) Stack Frame" out.folded > vpp-v17.07-rc0_stack-frame.svg
 
+
+=== perf output ===
+# perf stat -p $(pgrep vpp) -- sleep 60
+
+ Performance counter stats for process id '6533':
+
+     179793.151094      task-clock (msec)         #    2.997 CPUs utilized           [100.00%]
+               265      context-switches          #    0.001 K/sec                   [100.00%]
+                 0      cpu-migrations            #    0.000 K/sec                   [100.00%]
+                25      page-faults               #    0.000 K/sec                  
+   430,994,372,461      cycles                    #    2.397 GHz                     [100.00%]
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+   943,869,557,509      instructions              #    2.19  insns per cycle         [100.00%]
+   131,853,155,269      branches                  #  733.360 M/sec                   [100.00%]
+       318,577,041      branch-misses             #    0.24% of all branches        
+
+      60.001024238 seconds time elapsed
+
