@@ -133,4 +133,51 @@ perf script > out.perf
        318,577,041      branch-misses             #    0.24% of all branches        
 
       60.001024238 seconds time elapsed
+      
+
+# perf report
+Samples: 17K of event 'cycles', Event count (approx.): 431122679408                                                                                                             
++   32.98%     0.00%   vpp_main  libvppinfra.so.0.0.0    [.] clib_calljmp
++   32.98%     0.00%   vpp_main  libvlib.so.0.0.0        [.] thread0
++   32.98%     0.00%   vpp_main  libvlib.so.0.0.0        [.] vlib_main
++   32.98%     0.00%   vpp_main  libvlib.so.0.0.0        [.] vlib_main_loop
++   32.59%     0.00%   vpp_wk_0  libvppinfra.so.0.0.0    [.] clib_calljmp
++   32.59%     0.00%   vpp_wk_0  libvlib.so.0.0.0        [.] vlib_worker_thread_fn
++   32.59%     0.00%   vpp_wk_0  libvlib.so.0.0.0        [.] vlib_worker_loop
++   32.59%     0.04%   vpp_wk_0  libvlib.so.0.0.0        [.] vlib_main_or_worker_loop
++   32.48%     0.00%   vpp_wk_1  libvppinfra.so.0.0.0    [.] clib_calljmp
++   32.48%     0.00%   vpp_wk_1  libvlib.so.0.0.0        [.] vlib_worker_thread_fn
++   32.48%     0.00%   vpp_wk_1  libvlib.so.0.0.0        [.] vlib_worker_loop
++   32.48%     0.06%   vpp_wk_1  libvlib.so.0.0.0        [.] vlib_main_or_worker_loop
++   32.41%     0.12%   vpp_wk_0  libvlib.so.0.0.0        [.] dispatch_node
++   32.34%     3.49%   vpp_main  libvlib.so.0.0.0        [.] vlib_main_or_worker_loop
++   32.32%     0.09%   vpp_wk_1  libvlib.so.0.0.0        [.] dispatch_node
++   31.10%     0.05%   vpp_wk_0  libvlib.so.0.0.0        [.] dispatch_pending_node
++   30.95%     0.03%   vpp_wk_1  libvlib.so.0.0.0        [.] dispatch_pending_node
++   24.06%     5.66%   vpp_main  libvlib.so.0.0.0        [.] dispatch_node
++   16.30%     0.00%   vpp_wk_0  libvnet.so.0.0.0        [.] ip4_lookup
++   15.97%     0.00%   vpp_wk_1  libvnet.so.0.0.0        [.] ip4_lookup
++   15.92%     1.49%   vpp_wk_0  libvnet.so.0.0.0        [.] ip4_lookup_inline
++   15.70%     1.45%   vpp_wk_1  libvnet.so.0.0.0        [.] ip4_lookup_inline
++   11.25%     0.73%   vpp_main  libc-2.17.so            [.] epoll_pwait
++    9.16%     1.72%   vpp_main  [kernel.kallsyms]       [k] system_call
++    6.28%     0.55%   vpp_main  [kernel.kallsyms]       [k] sys_epoll_pwait
++    5.72%     0.00%   vpp_wk_0  libvnet.so.0.0.0        [.] ip4_rewrite
++    5.63%     0.68%   vpp_wk_0  libvnet.so.0.0.0        [.] ip4_rewrite_inline
++    5.52%     0.00%   vpp_wk_1  libvnet.so.0.0.0        [.] ip4_rewrite
++    5.46%     0.71%   vpp_wk_1  libvnet.so.0.0.0        [.] ip4_rewrite_inline
++    5.37%     0.20%   vpp_wk_0  libvnet.so.0.0.0        [.] vlib_set_next_frame_buffer
++    5.30%     0.21%   vpp_wk_1  libvnet.so.0.0.0        [.] vlib_set_next_frame_buffer
++    5.04%     0.00%   vpp_wk_1  libvnet.so.0.0.0        [.] ip4_input_no_checksum
++    5.03%     0.00%   vpp_wk_0  libvnet.so.0.0.0        [.] ip4_input_no_checksum
++    4.80%     0.84%   vpp_wk_1  libvnet.so.0.0.0        [.] ip4_input_inline
++    4.75%     0.99%   vpp_wk_0  libvnet.so.0.0.0        [.] ip4_input_inline
++    3.67%     1.98%   vpp_wk_0  libvnet.so.0.0.0        [.] ip4_compute_flow_hash
++    3.60%     2.01%   vpp_wk_1  libvnet.so.0.0.0        [.] ip4_compute_flow_hash
++    3.33%     0.51%   vpp_wk_0  libvlib.so.0.0.0        [.] vlib_put_next_frame
++    3.29%     0.47%   vpp_wk_1  libvlib.so.0.0.0        [.] vlib_get_next_frame_internal
++    3.22%     0.47%   vpp_wk_0  libvlib.so.0.0.0        [.] vlib_get_next_frame_internal
++    3.19%     1.03%   vpp_main  libvppinfra.so.0.0.0    [.] timing_wheel_advance
++    3.17%     0.41%   vpp_wk_1  libvlib.so.0.0.0        [.] vlib_put_next_frame
+Press '?' for help on key bindings 
 
