@@ -1,0 +1,521 @@
+# cat /proc/$(pgrep vpp)/maps
+00400000-004ae000 r-xp 00000000 fd:02 201518387                          /home/fdio/vpp/build-root/install-vpp-native/vpp/bin/vpp
+006ad000-006ae000 r--p 000ad000 fd:02 201518387                          /home/fdio/vpp/build-root/install-vpp-native/vpp/bin/vpp
+006ae000-006af000 rw-p 000ae000 fd:02 201518387                          /home/fdio/vpp/build-root/install-vpp-native/vpp/bin/vpp
+006af000-006b0000 rw-p 00000000 00:00 0 
+0163e000-016c1000 rw-p 00000000 00:00 0                                  [heap]
+30000000-30021000 rw-s 00000000 00:10 459973                             /dev/shm/global_vm
+30021000-30442000 rw-s 00000000 00:10 459974                             /dev/shm/db
+30442000-31463000 rw-s 00000000 00:10 466230                             /dev/shm/vpe-api
+31463000-34000000 rw-s 01463000 00:10 459973                             /dev/shm/global_vm
+7fa4dbc00000-7fa4dbe00000 rw-s 00000000 00:27 2131609                    /vppmap_1
+7fa4dbe00000-7fa4dc000000 rw-s 00000000 00:27 2131608                    /vppmap_0
+7fa4dc000000-7fa4dc200000 rw-s 00000000 00:27 2131611                    /vppmap_3
+7fa4dc200000-7fa4dc400000 rw-s 00000000 00:27 2131610                    /vppmap_2
+7fa4dc400000-7fa4dc600000 rw-s 00000000 00:27 2131613                    /vppmap_5
+7fa4dc600000-7fa4dc800000 rw-s 00000000 00:27 2131612                    /vppmap_4
+7fa4dc800000-7fa4dca00000 rw-s 00000000 00:27 2131615                    /vppmap_7
+7fa4dca00000-7fa4dcc00000 rw-s 00000000 00:27 2131614                    /vppmap_6
+7fa4dcc00000-7fa4dce00000 rw-s 00000000 00:27 2131617                    /vppmap_9
+7fa4dce00000-7fa4dd000000 rw-s 00000000 00:27 2131616                    /vppmap_8
+7fa4dd000000-7fa4dd200000 rw-s 00000000 00:27 2131619                    /vppmap_11
+7fa4dd200000-7fa4dd400000 rw-s 00000000 00:27 2131618                    /vppmap_10
+7fa4dd400000-7fa4dd600000 rw-s 00000000 00:27 2131621                    /vppmap_13
+7fa4dd600000-7fa4dd800000 rw-s 00000000 00:27 2131620                    /vppmap_12
+7fa4dd800000-7fa4dda00000 rw-s 00000000 00:27 2131623                    /vppmap_15
+7fa4dda00000-7fa4ddc00000 rw-s 00000000 00:27 2131622                    /vppmap_14
+7fa4ddc00000-7fa4dde00000 rw-s 00000000 00:27 2131625                    /vppmap_17
+7fa4dde00000-7fa4de000000 rw-s 00000000 00:27 2131624                    /vppmap_16
+7fa4de000000-7fa4de200000 rw-s 00000000 00:27 2131627                    /vppmap_19
+7fa4de200000-7fa4de400000 rw-s 00000000 00:27 2131626                    /vppmap_18
+7fa4de400000-7fa4de600000 rw-s 00000000 00:27 2131630                    /vppmap_21
+7fa4de600000-7fa4de800000 rw-s 00000000 00:27 2131628                    /vppmap_20
+7fa4de800000-7fa4dea00000 rw-s 00000000 00:27 2131632                    /vppmap_23
+7fa4dea00000-7fa4dec00000 rw-s 00000000 00:27 2131631                    /vppmap_22
+7fa4dec00000-7fa4dee00000 rw-s 00000000 00:27 2131634                    /vppmap_25
+7fa4dee00000-7fa4df000000 rw-s 00000000 00:27 2131633                    /vppmap_24
+7fa4df000000-7fa4df200000 rw-s 00000000 00:27 2131636                    /vppmap_27
+7fa4df200000-7fa4df400000 rw-s 00000000 00:27 2131635                    /vppmap_26
+7fa4df400000-7fa4df600000 rw-s 00000000 00:27 2131638                    /vppmap_29
+7fa4df600000-7fa4df800000 rw-s 00000000 00:27 2131637                    /vppmap_28
+7fa4df800000-7fa4dfa00000 rw-s 00000000 00:27 2131640                    /vppmap_31
+7fa4dfa00000-7fa4dfc00000 rw-s 00000000 00:27 2131639                    /vppmap_30
+7fa4dfc00000-7fa4dfe00000 rw-s 00000000 00:27 2131642                    /vppmap_33
+7fa4dfe00000-7fa4e0000000 rw-s 00000000 00:27 2131641                    /vppmap_32
+7fa4e0000000-7fa4e0200000 rw-s 00000000 00:27 2131644                    /vppmap_35
+7fa4e0200000-7fa4e0400000 rw-s 00000000 00:27 2131643                    /vppmap_34
+7fa4e0400000-7fa4e0600000 rw-s 00000000 00:27 2131646                    /vppmap_37
+7fa4e0600000-7fa4e0800000 rw-s 00000000 00:27 2131645                    /vppmap_36
+7fa4e0800000-7fa4e0a00000 rw-s 00000000 00:27 2131648                    /vppmap_39
+7fa4e0a00000-7fa4e0c00000 rw-s 00000000 00:27 2131647                    /vppmap_38
+7fa4e0c00000-7fa4e0e00000 rw-s 00000000 00:27 2131650                    /vppmap_41
+7fa4e0e00000-7fa4e1000000 rw-s 00000000 00:27 2131649                    /vppmap_40
+7fa4e1000000-7fa4e1200000 rw-s 00000000 00:27 2131652                    /vppmap_43
+7fa4e1200000-7fa4e1400000 rw-s 00000000 00:27 2131651                    /vppmap_42
+7fa4e1400000-7fa4e1600000 rw-s 00000000 00:27 2131654                    /vppmap_45
+7fa4e1600000-7fa4e1800000 rw-s 00000000 00:27 2131653                    /vppmap_44
+7fa4e1800000-7fa4e1a00000 rw-s 00000000 00:27 2131656                    /vppmap_47
+7fa4e1a00000-7fa4e1c00000 rw-s 00000000 00:27 2131655                    /vppmap_46
+7fa4e1c00000-7fa4e1e00000 rw-s 00000000 00:27 2131658                    /vppmap_49
+7fa4e1e00000-7fa4e2000000 rw-s 00000000 00:27 2131657                    /vppmap_48
+7fa4e2000000-7fa4e2200000 rw-s 00000000 00:27 2131660                    /vppmap_51
+7fa4e2200000-7fa4e2400000 rw-s 00000000 00:27 2131659                    /vppmap_50
+7fa4e2400000-7fa4e2600000 rw-s 00000000 00:27 2131662                    /vppmap_53
+7fa4e2600000-7fa4e2800000 rw-s 00000000 00:27 2131661                    /vppmap_52
+7fa4e2800000-7fa4e2a00000 rw-s 00000000 00:27 2131664                    /vppmap_55
+7fa4e2a00000-7fa4e2c00000 rw-s 00000000 00:27 2131663                    /vppmap_54
+7fa4e2c00000-7fa4e2e00000 rw-s 00000000 00:27 2131666                    /vppmap_57
+7fa4e2e00000-7fa4e3000000 rw-s 00000000 00:27 2131665                    /vppmap_56
+7fa4e3000000-7fa4e3200000 rw-s 00000000 00:27 2131668                    /vppmap_59
+7fa4e3200000-7fa4e3400000 rw-s 00000000 00:27 2131667                    /vppmap_58
+7fa4e3400000-7fa4e3600000 rw-s 00000000 00:27 2131670                    /vppmap_61
+7fa4e3600000-7fa4e3800000 rw-s 00000000 00:27 2131669                    /vppmap_60
+7fa4e3800000-7fa4e3a00000 rw-s 00000000 00:27 2131672                    /vppmap_63
+7fa4e3a00000-7fa4e3c00000 rw-s 00000000 00:27 2131671                    /vppmap_62
+7fa4e3c00000-7fa4e3e00000 rw-s 00000000 00:27 2131674                    /vppmap_65
+7fa4e3e00000-7fa4e4000000 rw-s 00000000 00:27 2131673                    /vppmap_64
+7fa4e4000000-7fa4e4200000 rw-s 00000000 00:27 2131676                    /vppmap_67
+7fa4e4200000-7fa4e4400000 rw-s 00000000 00:27 2131675                    /vppmap_66
+7fa4e4400000-7fa4e4600000 rw-s 00000000 00:27 2131678                    /vppmap_69
+7fa4e4600000-7fa4e4800000 rw-s 00000000 00:27 2131677                    /vppmap_68
+7fa4e4800000-7fa4e4a00000 rw-s 00000000 00:27 2131680                    /vppmap_71
+7fa4e4a00000-7fa4e4c00000 rw-s 00000000 00:27 2131679                    /vppmap_70
+7fa4e4c00000-7fa4e4e00000 rw-s 00000000 00:27 2131682                    /vppmap_73
+7fa4e4e00000-7fa4e5000000 rw-s 00000000 00:27 2131681                    /vppmap_72
+7fa4e5000000-7fa4e5200000 rw-s 00000000 00:27 2131684                    /vppmap_75
+7fa4e5200000-7fa4e5400000 rw-s 00000000 00:27 2131683                    /vppmap_74
+7fa4e5400000-7fa4e5600000 rw-s 00000000 00:27 2131686                    /vppmap_77
+7fa4e5600000-7fa4e5800000 rw-s 00000000 00:27 2131685                    /vppmap_76
+7fa4e5800000-7fa4e5a00000 rw-s 00000000 00:27 2131688                    /vppmap_79
+7fa4e5a00000-7fa4e5c00000 rw-s 00000000 00:27 2131687                    /vppmap_78
+7fa4e5c00000-7fa4e5e00000 rw-s 00000000 00:27 2131690                    /vppmap_81
+7fa4e5e00000-7fa4e6000000 rw-s 00000000 00:27 2131689                    /vppmap_80
+7fa4e6000000-7fa4e6200000 rw-s 00000000 00:27 2131692                    /vppmap_83
+7fa4e6200000-7fa4e6400000 rw-s 00000000 00:27 2131691                    /vppmap_82
+7fa4e6400000-7fa4e6600000 rw-s 00000000 00:27 2131694                    /vppmap_85
+7fa4e6600000-7fa4e6800000 rw-s 00000000 00:27 2131693                    /vppmap_84
+7fa4e6800000-7fa4e6a00000 rw-s 00000000 00:27 2131696                    /vppmap_87
+7fa4e6a00000-7fa4e6c00000 rw-s 00000000 00:27 2131695                    /vppmap_86
+7fa4e6c00000-7fa4e6e00000 rw-s 00000000 00:27 2131698                    /vppmap_89
+7fa4e6e00000-7fa4e7000000 rw-s 00000000 00:27 2131697                    /vppmap_88
+7fa4e7000000-7fa4e7200000 rw-s 00000000 00:27 2131700                    /vppmap_91
+7fa4e7200000-7fa4e7400000 rw-s 00000000 00:27 2131699                    /vppmap_90
+7fa4e7400000-7fa4e7600000 rw-s 00000000 00:27 2131702                    /vppmap_93
+7fa4e7600000-7fa4e7800000 rw-s 00000000 00:27 2131701                    /vppmap_92
+7fa4e7800000-7fa4e7a00000 rw-s 00000000 00:27 2131704                    /vppmap_95
+7fa4e7a00000-7fa4e7c00000 rw-s 00000000 00:27 2131703                    /vppmap_94
+7fa4e7c00000-7fa4e7e00000 rw-s 00000000 00:27 2131706                    /vppmap_97
+7fa4e7e00000-7fa4e8000000 rw-s 00000000 00:27 2131705                    /vppmap_96
+7fa4e8000000-7fa4e8200000 rw-s 00000000 00:27 2131708                    /vppmap_99
+7fa4e8200000-7fa4e8400000 rw-s 00000000 00:27 2131707                    /vppmap_98
+7fa4e8400000-7fa4e8600000 rw-s 00000000 00:27 2131710                    /vppmap_101
+7fa4e8600000-7fa4e8800000 rw-s 00000000 00:27 2131709                    /vppmap_100
+7fa4e8800000-7fa4e8a00000 rw-s 00000000 00:27 2131712                    /vppmap_103
+7fa4e8a00000-7fa4e8c00000 rw-s 00000000 00:27 2131711                    /vppmap_102
+7fa4e8c00000-7fa4e8e00000 rw-s 00000000 00:27 2131714                    /vppmap_105
+7fa4e8e00000-7fa4e9000000 rw-s 00000000 00:27 2131713                    /vppmap_104
+7fa4e9000000-7fa4e9200000 rw-s 00000000 00:27 2131716                    /vppmap_107
+7fa4e9200000-7fa4e9400000 rw-s 00000000 00:27 2131715                    /vppmap_106
+7fa4e9400000-7fa4e9600000 rw-s 00000000 00:27 2131718                    /vppmap_109
+7fa4e9600000-7fa4e9800000 rw-s 00000000 00:27 2131717                    /vppmap_108
+7fa4e9800000-7fa4e9a00000 rw-s 00000000 00:27 2131720                    /vppmap_111
+7fa4e9a00000-7fa4e9c00000 rw-s 00000000 00:27 2131719                    /vppmap_110
+7fa4e9c00000-7fa4e9e00000 rw-s 00000000 00:27 2131722                    /vppmap_113
+7fa4e9e00000-7fa4ea000000 rw-s 00000000 00:27 2131721                    /vppmap_112
+7fa4ea000000-7fa4ea200000 rw-s 00000000 00:27 2131724                    /vppmap_115
+7fa4ea200000-7fa4ea400000 rw-s 00000000 00:27 2131723                    /vppmap_114
+7fa4ea400000-7fa4ea600000 rw-s 00000000 00:27 2131726                    /vppmap_117
+7fa4ea600000-7fa4ea800000 rw-s 00000000 00:27 2131725                    /vppmap_116
+7fa4ea800000-7fa4eaa00000 rw-s 00000000 00:27 2131728                    /vppmap_119
+7fa4eaa00000-7fa4eac00000 rw-s 00000000 00:27 2131727                    /vppmap_118
+7fa4eac00000-7fa4eae00000 rw-s 00000000 00:27 2131730                    /vppmap_121
+7fa4eae00000-7fa4eb000000 rw-s 00000000 00:27 2131729                    /vppmap_120
+7fa4eb000000-7fa4eb200000 rw-s 00000000 00:27 2131732                    /vppmap_123
+7fa4eb200000-7fa4eb400000 rw-s 00000000 00:27 2131731                    /vppmap_122
+7fa4eb400000-7fa4eb600000 rw-s 00000000 00:27 2131734                    /vppmap_125
+7fa4eb600000-7fa4eb800000 rw-s 00000000 00:27 2131733                    /vppmap_124
+7fa4eb800000-7fa4eba00000 rw-s 00000000 00:27 2131736                    /vppmap_127
+7fa4eba00000-7fa4ebc00000 rw-s 00000000 00:27 2131735                    /vppmap_126
+7fa538000000-7fa538021000 rw-p 00000000 00:00 0 
+7fa538021000-7fa53c000000 ---p 00000000 00:00 0 
+7fa53c000000-7fa540000000 rw-p 00000000 00:00 0 
+7fa540000000-7fa540021000 rw-p 00000000 00:00 0 
+7fa540021000-7fa544000000 ---p 00000000 00:00 0 
+7fa546c00000-7fa546e00000 rw-s 00000000 00:27 2134170                    /vppmap_513
+7fa546e00000-7fa547000000 rw-s 00000000 00:27 2134169                    /vppmap_512
+7fa547000000-7fa547200000 rw-s 00000000 00:27 2134172                    /vppmap_515
+7fa547200000-7fa547400000 rw-s 00000000 00:27 2134171                    /vppmap_514
+7fa547400000-7fa547600000 rw-s 00000000 00:27 2134174                    /vppmap_517
+7fa547600000-7fa547800000 rw-s 00000000 00:27 2134173                    /vppmap_516
+7fa547800000-7fa547a00000 rw-s 00000000 00:27 2134176                    /vppmap_519
+7fa547a00000-7fa547c00000 rw-s 00000000 00:27 2134175                    /vppmap_518
+7fa547c00000-7fa547e00000 rw-s 00000000 00:27 2134178                    /vppmap_521
+7fa547e00000-7fa548000000 rw-s 00000000 00:27 2134177                    /vppmap_520
+7fa548000000-7fa548200000 rw-s 00000000 00:27 2134180                    /vppmap_523
+7fa548200000-7fa548400000 rw-s 00000000 00:27 2134179                    /vppmap_522
+7fa548400000-7fa548600000 rw-s 00000000 00:27 2134182                    /vppmap_525
+7fa548600000-7fa548800000 rw-s 00000000 00:27 2134181                    /vppmap_524
+7fa548800000-7fa548a00000 rw-s 00000000 00:27 2134184                    /vppmap_527
+7fa548a00000-7fa548c00000 rw-s 00000000 00:27 2134183                    /vppmap_526
+7fa548c00000-7fa548e00000 rw-s 00000000 00:27 2134186                    /vppmap_529
+7fa548e00000-7fa549000000 rw-s 00000000 00:27 2134185                    /vppmap_528
+7fa549000000-7fa549200000 rw-s 00000000 00:27 2134188                    /vppmap_531
+7fa549200000-7fa549400000 rw-s 00000000 00:27 2134187                    /vppmap_530
+7fa549400000-7fa549600000 rw-s 00000000 00:27 2134190                    /vppmap_533
+7fa549600000-7fa549800000 rw-s 00000000 00:27 2134189                    /vppmap_532
+7fa549800000-7fa549a00000 rw-s 00000000 00:27 2134192                    /vppmap_535
+7fa549a00000-7fa549c00000 rw-s 00000000 00:27 2134191                    /vppmap_534
+7fa549c00000-7fa549e00000 rw-s 00000000 00:27 2134194                    /vppmap_537
+7fa549e00000-7fa54a000000 rw-s 00000000 00:27 2134193                    /vppmap_536
+7fa54a000000-7fa54a200000 rw-s 00000000 00:27 2134196                    /vppmap_539
+7fa54a200000-7fa54a400000 rw-s 00000000 00:27 2134195                    /vppmap_538
+7fa54a400000-7fa54a600000 rw-s 00000000 00:27 2134198                    /vppmap_541
+7fa54a600000-7fa54a800000 rw-s 00000000 00:27 2134197                    /vppmap_540
+7fa54a800000-7fa54aa00000 rw-s 00000000 00:27 2134200                    /vppmap_543
+7fa54aa00000-7fa54ac00000 rw-s 00000000 00:27 2134199                    /vppmap_542
+7fa54ac00000-7fa54ae00000 rw-s 00000000 00:27 2134202                    /vppmap_545
+7fa54ae00000-7fa54b000000 rw-s 00000000 00:27 2134201                    /vppmap_544
+7fa54b000000-7fa54b200000 rw-s 00000000 00:27 2134204                    /vppmap_547
+7fa54b200000-7fa54b400000 rw-s 00000000 00:27 2134203                    /vppmap_546
+7fa54b400000-7fa54b600000 rw-s 00000000 00:27 2134206                    /vppmap_549
+7fa54b600000-7fa54b800000 rw-s 00000000 00:27 2134205                    /vppmap_548
+7fa54b800000-7fa54ba00000 rw-s 00000000 00:27 2134208                    /vppmap_551
+7fa54ba00000-7fa54bc00000 rw-s 00000000 00:27 2134207                    /vppmap_550
+7fa54bc00000-7fa54be00000 rw-s 00000000 00:27 2134210                    /vppmap_553
+7fa54be00000-7fa54c000000 rw-s 00000000 00:27 2134209                    /vppmap_552
+7fa54c000000-7fa54c200000 rw-s 00000000 00:27 2134212                    /vppmap_555
+7fa54c200000-7fa54c400000 rw-s 00000000 00:27 2134211                    /vppmap_554
+7fa54c400000-7fa54c600000 rw-s 00000000 00:27 2134214                    /vppmap_557
+7fa54c600000-7fa54c800000 rw-s 00000000 00:27 2134213                    /vppmap_556
+7fa54c800000-7fa54ca00000 rw-s 00000000 00:27 2134216                    /vppmap_559
+7fa54ca00000-7fa54cc00000 rw-s 00000000 00:27 2134215                    /vppmap_558
+7fa54cc00000-7fa54ce00000 rw-s 00000000 00:27 2134218                    /vppmap_561
+7fa54ce00000-7fa54d000000 rw-s 00000000 00:27 2134217                    /vppmap_560
+7fa54d000000-7fa54d200000 rw-s 00000000 00:27 2134220                    /vppmap_563
+7fa54d200000-7fa54d400000 rw-s 00000000 00:27 2134219                    /vppmap_562
+7fa54d400000-7fa54d600000 rw-s 00000000 00:27 2134222                    /vppmap_565
+7fa54d600000-7fa54d800000 rw-s 00000000 00:27 2134221                    /vppmap_564
+7fa54d800000-7fa54da00000 rw-s 00000000 00:27 2134224                    /vppmap_567
+7fa54da00000-7fa54dc00000 rw-s 00000000 00:27 2134223                    /vppmap_566
+7fa54dc00000-7fa54de00000 rw-s 00000000 00:27 2134226                    /vppmap_569
+7fa54de00000-7fa54e000000 rw-s 00000000 00:27 2134225                    /vppmap_568
+7fa54e000000-7fa54e200000 rw-s 00000000 00:27 2134228                    /vppmap_571
+7fa54e200000-7fa54e400000 rw-s 00000000 00:27 2134227                    /vppmap_570
+7fa54e400000-7fa54e600000 rw-s 00000000 00:27 2134230                    /vppmap_573
+7fa54e600000-7fa54e800000 rw-s 00000000 00:27 2134229                    /vppmap_572
+7fa54e800000-7fa54ea00000 rw-s 00000000 00:27 2134232                    /vppmap_575
+7fa54ea00000-7fa54ec00000 rw-s 00000000 00:27 2134231                    /vppmap_574
+7fa54ec00000-7fa54ee00000 rw-s 00000000 00:27 2134234                    /vppmap_577
+7fa54ee00000-7fa54f000000 rw-s 00000000 00:27 2134233                    /vppmap_576
+7fa54f000000-7fa54f200000 rw-s 00000000 00:27 2134236                    /vppmap_579
+7fa54f200000-7fa54f400000 rw-s 00000000 00:27 2134235                    /vppmap_578
+7fa54f400000-7fa54f600000 rw-s 00000000 00:27 2134238                    /vppmap_581
+7fa54f600000-7fa54f800000 rw-s 00000000 00:27 2134237                    /vppmap_580
+7fa54f800000-7fa54fa00000 rw-s 00000000 00:27 2134240                    /vppmap_583
+7fa54fa00000-7fa54fc00000 rw-s 00000000 00:27 2134239                    /vppmap_582
+7fa54fc00000-7fa54fe00000 rw-s 00000000 00:27 2134242                    /vppmap_585
+7fa54fe00000-7fa550000000 rw-s 00000000 00:27 2134241                    /vppmap_584
+7fa550000000-7fa550200000 rw-s 00000000 00:27 2134244                    /vppmap_587
+7fa550200000-7fa550400000 rw-s 00000000 00:27 2134243                    /vppmap_586
+7fa550400000-7fa550600000 rw-s 00000000 00:27 2134246                    /vppmap_589
+7fa550600000-7fa550800000 rw-s 00000000 00:27 2134245                    /vppmap_588
+7fa550800000-7fa550a00000 rw-s 00000000 00:27 2134248                    /vppmap_591
+7fa550a00000-7fa550c00000 rw-s 00000000 00:27 2134247                    /vppmap_590
+7fa550c00000-7fa550e00000 rw-s 00000000 00:27 2134250                    /vppmap_593
+7fa550e00000-7fa551000000 rw-s 00000000 00:27 2134249                    /vppmap_592
+7fa551000000-7fa551200000 rw-s 00000000 00:27 2134252                    /vppmap_595
+7fa551200000-7fa551400000 rw-s 00000000 00:27 2134251                    /vppmap_594
+7fa551400000-7fa551600000 rw-s 00000000 00:27 2134254                    /vppmap_597
+7fa551600000-7fa551800000 rw-s 00000000 00:27 2134253                    /vppmap_596
+7fa551800000-7fa551a00000 rw-s 00000000 00:27 2134256                    /vppmap_599
+7fa551a00000-7fa551c00000 rw-s 00000000 00:27 2134255                    /vppmap_598
+7fa551c00000-7fa551e00000 rw-s 00000000 00:27 2134258                    /vppmap_601
+7fa551e00000-7fa552000000 rw-s 00000000 00:27 2134257                    /vppmap_600
+7fa552000000-7fa552200000 rw-s 00000000 00:27 2134260                    /vppmap_603
+7fa552200000-7fa552400000 rw-s 00000000 00:27 2134259                    /vppmap_602
+7fa552400000-7fa552600000 rw-s 00000000 00:27 2134262                    /vppmap_605
+7fa552600000-7fa552800000 rw-s 00000000 00:27 2134261                    /vppmap_604
+7fa552800000-7fa552a00000 rw-s 00000000 00:27 2134264                    /vppmap_607
+7fa552a00000-7fa552c00000 rw-s 00000000 00:27 2134263                    /vppmap_606
+7fa552c00000-7fa552e00000 rw-s 00000000 00:27 2134266                    /vppmap_609
+7fa552e00000-7fa553000000 rw-s 00000000 00:27 2134265                    /vppmap_608
+7fa553000000-7fa553200000 rw-s 00000000 00:27 2134268                    /vppmap_611
+7fa553200000-7fa553400000 rw-s 00000000 00:27 2134267                    /vppmap_610
+7fa553400000-7fa553600000 rw-s 00000000 00:27 2134270                    /vppmap_613
+7fa553600000-7fa553800000 rw-s 00000000 00:27 2134269                    /vppmap_612
+7fa553800000-7fa553a00000 rw-s 00000000 00:27 2134272                    /vppmap_615
+7fa553a00000-7fa553c00000 rw-s 00000000 00:27 2134271                    /vppmap_614
+7fa553c00000-7fa553e00000 rw-s 00000000 00:27 2134274                    /vppmap_617
+7fa553e00000-7fa554000000 rw-s 00000000 00:27 2134273                    /vppmap_616
+7fa554000000-7fa554200000 rw-s 00000000 00:27 2134276                    /vppmap_619
+7fa554200000-7fa554400000 rw-s 00000000 00:27 2134275                    /vppmap_618
+7fa554400000-7fa554600000 rw-s 00000000 00:27 2134278                    /vppmap_621
+7fa554600000-7fa554800000 rw-s 00000000 00:27 2134277                    /vppmap_620
+7fa554800000-7fa554a00000 rw-s 00000000 00:27 2134280                    /vppmap_623
+7fa554a00000-7fa554c00000 rw-s 00000000 00:27 2134279                    /vppmap_622
+7fa554c00000-7fa554e00000 rw-s 00000000 00:27 2134282                    /vppmap_625
+7fa554e00000-7fa555000000 rw-s 00000000 00:27 2134281                    /vppmap_624
+7fa555000000-7fa555200000 rw-s 00000000 00:27 2134284                    /vppmap_627
+7fa555200000-7fa555400000 rw-s 00000000 00:27 2134283                    /vppmap_626
+7fa555400000-7fa555600000 rw-s 00000000 00:27 2134286                    /vppmap_629
+7fa555600000-7fa555800000 rw-s 00000000 00:27 2134285                    /vppmap_628
+7fa558dfc000-7fa558dfd000 ---p 00000000 00:00 0 
+7fa558dfd000-7fa5595fd000 rw-p 00000000 00:00 0 
+7fa5595fd000-7fa5595fe000 ---p 00000000 00:00 0 
+7fa5595fe000-7fa559dfe000 rw-p 00000000 00:00 0 
+7fa559dfe000-7fa559dff000 ---p 00000000 00:00 0 
+7fa559dff000-7fa55a5ff000 rw-p 00000000 00:00 0 
+7fa55a5ff000-7fa55a600000 ---p 00000000 00:00 0 
+7fa55a600000-7fa55ae00000 rw-p 00000000 00:00 0                          [stack:20782]
+7fa55ae00000-7fa55b000000 rw-s 00000000 00:27 2134288                    /vppmap_631
+7fa55b000000-7fa55b200000 rw-s 00000000 00:27 2134287                    /vppmap_630
+7fa55b200000-7fa55b400000 rw-s 00000000 00:27 2134290                    /vppmap_633
+7fa55b400000-7fa55b600000 rw-s 00000000 00:27 2134289                    /vppmap_632
+7fa55b600000-7fa55b800000 rw-s 00000000 00:27 2134292                    /vppmap_635
+7fa55b800000-7fa55ba00000 rw-s 00000000 00:27 2134291                    /vppmap_634
+7fa55ba00000-7fa55bc00000 rw-s 00000000 00:27 2134294                    /vppmap_637
+7fa55bc00000-7fa55be00000 rw-s 00000000 00:27 2134293                    /vppmap_636
+7fa55be00000-7fa55c000000 rw-s 00000000 00:27 2134296                    /vppmap_639
+7fa55c000000-7fa55c200000 rw-s 00000000 00:27 2134295                    /vppmap_638
+7fa55c200000-7fa55c280000 rw-s fb980000 00:0f 41878                      /sys/devices/pci0000:80/0000:80:01.0/0000:82:00.0/resource0
+7fa55c280000-7fa55c284000 rw-s fbe04000 00:0f 41880                      /sys/devices/pci0000:80/0000:80:01.0/0000:82:00.0/resource4
+7fa55c284000-7fa55c304000 rw-s fb880000 00:0f 41885                      /sys/devices/pci0000:80/0000:80:01.0/0000:82:00.1/resource0
+7fa55c304000-7fa55c308000 rw-s fbe00000 00:0f 41887                      /sys/devices/pci0000:80/0000:80:01.0/0000:82:00.1/resource4
+7fa55c71a000-7fa55c71b000 ---p 00000000 00:00 0 
+7fa55c71b000-7fa5a0f1b000 rw-p 00000000 00:00 0                          [stack:20781]
+7fa5a0f1b000-7fa5a0f54000 r-xp 00000000 fd:01 218875934                  /usr/lib/vpp_plugins/snat_plugin.so
+7fa5a0f54000-7fa5a1154000 ---p 00039000 fd:01 218875934                  /usr/lib/vpp_plugins/snat_plugin.so
+7fa5a1154000-7fa5a1155000 r--p 00039000 fd:01 218875934                  /usr/lib/vpp_plugins/snat_plugin.so
+7fa5a1155000-7fa5a1156000 rw-p 0003a000 fd:01 218875934                  /usr/lib/vpp_plugins/snat_plugin.so
+7fa5a1156000-7fa5a1157000 rw-p 00000000 00:00 0 
+7fa5a1157000-7fa5a1185000 r-xp 00000000 fd:01 218875933                  /usr/lib/vpp_plugins/memif_plugin.so
+7fa5a1185000-7fa5a1384000 ---p 0002e000 fd:01 218875933                  /usr/lib/vpp_plugins/memif_plugin.so
+7fa5a1384000-7fa5a1385000 r--p 0002d000 fd:01 218875933                  /usr/lib/vpp_plugins/memif_plugin.so
+7fa5a1385000-7fa5a1386000 rw-p 0002e000 fd:01 218875933                  /usr/lib/vpp_plugins/memif_plugin.so
+7fa5a1386000-7fa5a138b000 r-xp 00000000 fd:01 218875932                  /usr/lib/vpp_plugins/libsixrd_plugin.so
+7fa5a138b000-7fa5a158a000 ---p 00005000 fd:01 218875932                  /usr/lib/vpp_plugins/libsixrd_plugin.so
+7fa5a158a000-7fa5a158b000 r--p 00004000 fd:01 218875932                  /usr/lib/vpp_plugins/libsixrd_plugin.so
+7fa5a158b000-7fa5a158c000 rw-p 00005000 fd:01 218875932                  /usr/lib/vpp_plugins/libsixrd_plugin.so
+7fa5a158c000-7fa5a1598000 r-xp 00000000 fd:01 218875931                  /usr/lib/vpp_plugins/lb_plugin.so
+7fa5a1598000-7fa5a1797000 ---p 0000c000 fd:01 218875931                  /usr/lib/vpp_plugins/lb_plugin.so
+7fa5a1797000-7fa5a1798000 r--p 0000b000 fd:01 218875931                  /usr/lib/vpp_plugins/lb_plugin.so
+7fa5a1798000-7fa5a1799000 rw-p 0000c000 fd:01 218875931                  /usr/lib/vpp_plugins/lb_plugin.so
+7fa5a1799000-7fa5a17f8000 r-xp 00000000 fd:01 218875929                  /usr/lib/vpp_plugins/ioam_plugin.so
+7fa5a17f8000-7fa5a19f8000 ---p 0005f000 fd:01 218875929                  /usr/lib/vpp_plugins/ioam_plugin.so
+7fa5a19f8000-7fa5a19f9000 r--p 0005f000 fd:01 218875929                  /usr/lib/vpp_plugins/ioam_plugin.so
+7fa5a19f9000-7fa5a19fb000 rw-p 00060000 fd:01 218875929                  /usr/lib/vpp_plugins/ioam_plugin.so
+7fa5a19fb000-7fa5a19fe000 rw-p 00000000 00:00 0 
+7fa5a19fe000-7fa5a1a04000 r-xp 00000000 fd:01 218875928                  /usr/lib/vpp_plugins/ila_plugin.so
+7fa5a1a04000-7fa5a1c03000 ---p 00006000 fd:01 218875928                  /usr/lib/vpp_plugins/ila_plugin.so
+7fa5a1c03000-7fa5a1c04000 r--p 00005000 fd:01 218875928                  /usr/lib/vpp_plugins/ila_plugin.so
+7fa5a1c04000-7fa5a1c05000 rw-p 00006000 fd:01 218875928                  /usr/lib/vpp_plugins/ila_plugin.so
+7fa5a1c05000-7fa5a1c0e000 r-xp 00000000 fd:01 218875927                  /usr/lib/vpp_plugins/flowperpkt_plugin.so
+7fa5a1c0e000-7fa5a1e0d000 ---p 00009000 fd:01 218875927                  /usr/lib/vpp_plugins/flowperpkt_plugin.so
+7fa5a1e0d000-7fa5a1e0e000 r--p 00008000 fd:01 218875927                  /usr/lib/vpp_plugins/flowperpkt_plugin.so
+7fa5a1e0e000-7fa5a1e0f000 rw-p 00009000 fd:01 218875927                  /usr/lib/vpp_plugins/flowperpkt_plugin.so
+7fa5a1e0f000-7fa5a2103000 r-xp 00000000 fd:01 218875926                  /usr/lib/vpp_plugins/dpdk_plugin.so
+7fa5a2103000-7fa5a2303000 ---p 002f4000 fd:01 218875926                  /usr/lib/vpp_plugins/dpdk_plugin.so
+7fa5a2303000-7fa5a2313000 r--p 002f4000 fd:01 218875926                  /usr/lib/vpp_plugins/dpdk_plugin.so
+7fa5a2313000-7fa5a232e000 rw-p 00304000 fd:01 218875926                  /usr/lib/vpp_plugins/dpdk_plugin.so
+7fa5a232e000-7fa5a2604000 rw-p 00000000 00:00 0 
+7fa5a2604000-7fa5a2623000 r-xp 00000000 fd:01 218875925                  /usr/lib/vpp_plugins/acl_plugin.so
+7fa5a2623000-7fa5a2822000 ---p 0001f000 fd:01 218875925                  /usr/lib/vpp_plugins/acl_plugin.so
+7fa5a2822000-7fa5a2823000 r--p 0001e000 fd:01 218875925                  /usr/lib/vpp_plugins/acl_plugin.so
+7fa5a2823000-7fa5a2825000 rw-p 0001f000 fd:01 218875925                  /usr/lib/vpp_plugins/acl_plugin.so
+7fa5a2825000-7fa5a2992000 rw-p 00000000 00:00 0 
+7fa5a2992000-7fa5a2993000 r--p 00000000 00:00 0 
+7fa5a2993000-7fa5a29a8000 rw-p 00000000 00:00 0 
+7fa5a29a8000-7fa5a29a9000 r--p 00000000 00:00 0 
+7fa5a29a9000-7fa5a29b2000 rw-p 00000000 00:00 0 
+7fa5a29b2000-7fa5a29b3000 r--p 00000000 00:00 0 
+7fa5a29b3000-7fa5a29d9000 rw-p 00000000 00:00 0 
+7fa5a29d9000-7fa5a29da000 r--p 00000000 00:00 0 
+7fa5a29da000-7fa5a29eb000 rw-p 00000000 00:00 0 
+7fa5a29eb000-7fa5a29ec000 r--p 00000000 00:00 0 
+7fa5a29ec000-7fa5a29f5000 rw-p 00000000 00:00 0 
+7fa5a29f5000-7fa5a29f6000 r--p 00000000 00:00 0 
+7fa5a29f6000-7fa5a29ff000 rw-p 00000000 00:00 0 
+7fa5a29ff000-7fa5a2a00000 r--p 00000000 00:00 0 
+7fa5a2a00000-7fa5a2a09000 rw-p 00000000 00:00 0 
+7fa5a2a09000-7fa5a2a0a000 r--p 00000000 00:00 0 
+7fa5a2a0a000-7fa5a2a16000 rw-p 00000000 00:00 0 
+7fa5a2a16000-7fa5a2a17000 r--p 00000000 00:00 0 
+7fa5a2a17000-7fa5a2a27000 rw-p 00000000 00:00 0 
+7fa5a2a27000-7fa5a2a28000 r--p 00000000 00:00 0 
+7fa5a2a28000-7fa5a2b27000 rw-p 00000000 00:00 0                          [stack:20780]
+7fa5a2b27000-7fa5a2b28000 r--p 00000000 00:00 0 
+7fa5a2b28000-7fa5a2c27000 rw-p 00000000 00:00 0                          [stack:20783]
+7fa5a2c27000-7fa5a2c28000 r--p 00000000 00:00 0 
+7fa5a2c28000-7fa5a2d27000 rw-p 00000000 00:00 0                          [stack:20784]
+7fa5a2d27000-7fa5a2d28000 r--p 00000000 00:00 0 
+7fa5a2d28000-7fa5a2e32000 rw-p 00000000 00:00 0                          [stack:20785]
+7fa5a2e32000-7fa5a2e33000 r--p 00000000 00:00 0 
+7fa5a2e33000-7fa5a2e44000 rw-p 00000000 00:00 0 
+7fa5a2e44000-7fa5a2e45000 r--p 00000000 00:00 0 
+7fa5a2e45000-7fa5a2e4e000 rw-p 00000000 00:00 0 
+7fa5a2e4e000-7fa5a2e4f000 r--p 00000000 00:00 0 
+7fa5a2e4f000-7fa5a2e58000 rw-p 00000000 00:00 0 
+7fa5a2e58000-7fa5a2e59000 r--p 00000000 00:00 0 
+7fa5a2e59000-7fa5a2e62000 rw-p 00000000 00:00 0 
+7fa5a2e62000-7fa5a2e63000 r--p 00000000 00:00 0 
+7fa5a2e63000-7fa5a2e6c000 rw-p 00000000 00:00 0 
+7fa5a2e6c000-7fa5a2e6d000 r--p 00000000 00:00 0 
+7fa5a2e6d000-7fa5a2e76000 rw-p 00000000 00:00 0 
+7fa5a2e76000-7fa5a2e77000 r--p 00000000 00:00 0 
+7fa5a2e77000-7fa5a2e80000 rw-p 00000000 00:00 0 
+7fa5a2e80000-7fa5a2e81000 r--p 00000000 00:00 0 
+7fa5a2e81000-7fa5a2e8a000 rw-p 00000000 00:00 0 
+7fa5a2e8a000-7fa5a2e8b000 r--p 00000000 00:00 0 
+7fa5a2e8b000-7fa5a2e94000 rw-p 00000000 00:00 0 
+7fa5a2e94000-7fa5a2e95000 r--p 00000000 00:00 0 
+7fa5a2e95000-7fa5a2eb6000 rw-p 00000000 00:00 0 
+7fa5a2eb6000-7fa5a2eb7000 r--p 00000000 00:00 0 
+7fa5a2eb7000-7fa5a2f05000 rw-p 00000000 00:00 0 
+7fa5a2f05000-7fa5a2f06000 r--p 00000000 00:00 0 
+7fa5a2f06000-7fa5a2f3d000 rw-p 00000000 00:00 0 
+7fa5a2f3d000-7fa5a2f3e000 r--p 00000000 00:00 0 
+7fa5a2f3e000-7fa5a2f47000 rw-p 00000000 00:00 0 
+7fa5a2f47000-7fa5a2f48000 r--p 00000000 00:00 0 
+7fa5a2f48000-7fa5a2f58000 rw-p 00000000 00:00 0 
+7fa5a2f58000-7fa5a2f59000 r--p 00000000 00:00 0 
+7fa5a2f59000-7fa5a2f62000 rw-p 00000000 00:00 0 
+7fa5a2f62000-7fa5a2f63000 r--p 00000000 00:00 0 
+7fa5a2f63000-7fa5a2f6c000 rw-p 00000000 00:00 0 
+7fa5a2f6c000-7fa5a2f6d000 r--p 00000000 00:00 0 
+7fa5a2f6d000-7fa5a3bc8000 rw-p 00000000 00:00 0 
+7fa5a3bc8000-7fa5a3bc9000 r--p 00000000 00:00 0 
+7fa5a3bc9000-7fa5e2826000 rw-p 00000000 00:00 0 
+7fa5e2826000-7fa5e283b000 r-xp 00000000 fd:01 187000575                  /usr/lib64/libz.so.1.2.7
+7fa5e283b000-7fa5e2a3a000 ---p 00015000 fd:01 187000575                  /usr/lib64/libz.so.1.2.7
+7fa5e2a3a000-7fa5e2a3b000 r--p 00014000 fd:01 187000575                  /usr/lib64/libz.so.1.2.7
+7fa5e2a3b000-7fa5e2a3c000 rw-p 00015000 fd:01 187000575                  /usr/lib64/libz.so.1.2.7
+7fa5e2a3c000-7fa5e2bf2000 r-xp 00000000 fd:01 184551021                  /usr/lib64/libc-2.17.so
+7fa5e2bf2000-7fa5e2df2000 ---p 001b6000 fd:01 184551021                  /usr/lib64/libc-2.17.so
+7fa5e2df2000-7fa5e2df6000 r--p 001b6000 fd:01 184551021                  /usr/lib64/libc-2.17.so
+7fa5e2df6000-7fa5e2df8000 rw-p 001ba000 fd:01 184551021                  /usr/lib64/libc-2.17.so
+7fa5e2df8000-7fa5e2dfd000 rw-p 00000000 00:00 0 
+7fa5e2dfd000-7fa5e2dff000 r-xp 00000000 fd:01 184551027                  /usr/lib64/libdl-2.17.so
+7fa5e2dff000-7fa5e2fff000 ---p 00002000 fd:01 184551027                  /usr/lib64/libdl-2.17.so
+7fa5e2fff000-7fa5e3000000 r--p 00002000 fd:01 184551027                  /usr/lib64/libdl-2.17.so
+7fa5e3000000-7fa5e3001000 rw-p 00003000 fd:01 184551027                  /usr/lib64/libdl-2.17.so
+7fa5e3001000-7fa5e3018000 r-xp 00000000 fd:01 187000548                  /usr/lib64/libpthread-2.17.so
+7fa5e3018000-7fa5e3217000 ---p 00017000 fd:01 187000548                  /usr/lib64/libpthread-2.17.so
+7fa5e3217000-7fa5e3218000 r--p 00016000 fd:01 187000548                  /usr/lib64/libpthread-2.17.so
+7fa5e3218000-7fa5e3219000 rw-p 00017000 fd:01 187000548                  /usr/lib64/libpthread-2.17.so
+7fa5e3219000-7fa5e321d000 rw-p 00000000 00:00 0 
+7fa5e321d000-7fa5e331d000 r-xp 00000000 fd:01 187000530                  /usr/lib64/libm-2.17.so
+7fa5e331d000-7fa5e351d000 ---p 00100000 fd:01 187000530                  /usr/lib64/libm-2.17.so
+7fa5e351d000-7fa5e351e000 r--p 00100000 fd:01 187000530                  /usr/lib64/libm-2.17.so
+7fa5e351e000-7fa5e351f000 rw-p 00101000 fd:01 187000530                  /usr/lib64/libm-2.17.so
+7fa5e351f000-7fa5e3526000 r-xp 00000000 fd:01 187000552                  /usr/lib64/librt-2.17.so
+7fa5e3526000-7fa5e3725000 ---p 00007000 fd:01 187000552                  /usr/lib64/librt-2.17.so
+7fa5e3725000-7fa5e3726000 r--p 00006000 fd:01 187000552                  /usr/lib64/librt-2.17.so
+7fa5e3726000-7fa5e3727000 rw-p 00007000 fd:01 187000552                  /usr/lib64/librt-2.17.so
+7fa5e3727000-7fa5e37a2000 r-xp 00000000 fd:02 134256141                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvppinfra.so.0.0.0
+7fa5e37a2000-7fa5e39a2000 ---p 0007b000 fd:02 134256141                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvppinfra.so.0.0.0
+7fa5e39a2000-7fa5e39a3000 r--p 0007b000 fd:02 134256141                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvppinfra.so.0.0.0
+7fa5e39a3000-7fa5e39aa000 rw-p 0007c000 fd:02 134256141                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvppinfra.so.0.0.0
+7fa5e39aa000-7fa5e39ab000 rw-p 00000000 00:00 0 
+7fa5e39ab000-7fa5e39c2000 r-xp 00000000 fd:02 134256162                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvm.so.0.0.0
+7fa5e39c2000-7fa5e3bc1000 ---p 00017000 fd:02 134256162                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvm.so.0.0.0
+7fa5e3bc1000-7fa5e3bc2000 r--p 00016000 fd:02 134256162                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvm.so.0.0.0
+7fa5e3bc2000-7fa5e3bc3000 rw-p 00017000 fd:02 134256162                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvm.so.0.0.0
+7fa5e3bc3000-7fa5e3d83000 r-xp 00000000 fd:01 184551185                  /usr/lib64/libcrypto.so.1.0.1e
+7fa5e3d83000-7fa5e3f83000 ---p 001c0000 fd:01 184551185                  /usr/lib64/libcrypto.so.1.0.1e
+7fa5e3f83000-7fa5e3f9d000 r--p 001c0000 fd:01 184551185                  /usr/lib64/libcrypto.so.1.0.1e
+7fa5e3f9d000-7fa5e3fa9000 rw-p 001da000 fd:01 184551185                  /usr/lib64/libcrypto.so.1.0.1e
+7fa5e3fa9000-7fa5e3fad000 rw-p 00000000 00:00 0 
+7fa5e3fad000-7fa5e3fbe000 r-xp 00000000 fd:02 134256185                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemoryclient.so.0.0.0
+7fa5e3fbe000-7fa5e41bd000 ---p 00011000 fd:02 134256185                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemoryclient.so.0.0.0
+7fa5e41bd000-7fa5e41be000 r--p 00010000 fd:02 134256185                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemoryclient.so.0.0.0
+7fa5e41be000-7fa5e41bf000 rw-p 00011000 fd:02 134256185                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemoryclient.so.0.0.0
+7fa5e41bf000-7fa5e41c8000 r-xp 00000000 fd:02 134256169                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvmdb.so.0.0.0
+7fa5e41c8000-7fa5e43c7000 ---p 00009000 fd:02 134256169                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvmdb.so.0.0.0
+7fa5e43c7000-7fa5e43c8000 r--p 00008000 fd:02 134256169                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvmdb.so.0.0.0
+7fa5e43c8000-7fa5e43c9000 rw-p 00009000 fd:02 134256169                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libsvmdb.so.0.0.0
+7fa5e43c9000-7fa5e484c000 r-xp 00000000 fd:02 134256384                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvnet.so.0.0.0
+7fa5e484c000-7fa5e4a4b000 ---p 00483000 fd:02 134256384                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvnet.so.0.0.0
+7fa5e4a4b000-7fa5e4a53000 r--p 00482000 fd:02 134256384                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvnet.so.0.0.0
+7fa5e4a53000-7fa5e4a6d000 rw-p 0048a000 fd:02 134256384                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvnet.so.0.0.0
+7fa5e4a6d000-7fa5e4a8a000 rw-p 00000000 00:00 0 
+7fa5e4a8a000-7fa5e4b09000 r-xp 00000000 fd:02 134256173                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlib.so.0.0.0
+7fa5e4b09000-7fa5e4d08000 ---p 0007f000 fd:02 134256173                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlib.so.0.0.0
+7fa5e4d08000-7fa5e4d09000 r--p 0007e000 fd:02 134256173                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlib.so.0.0.0
+7fa5e4d09000-7fa5e4d0d000 rw-p 0007f000 fd:02 134256173                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlib.so.0.0.0
+7fa5e4d0d000-7fa5e4d0e000 rw-p 00000000 00:00 0 
+7fa5e4d0e000-7fa5e4d2b000 r-xp 00000000 fd:02 134256177                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemory.so.0.0.0
+7fa5e4d2b000-7fa5e4f2a000 ---p 0001d000 fd:02 134256177                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemory.so.0.0.0
+7fa5e4f2a000-7fa5e4f2b000 r--p 0001c000 fd:02 134256177                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemory.so.0.0.0
+7fa5e4f2b000-7fa5e4f2c000 rw-p 0001d000 fd:02 134256177                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibmemory.so.0.0.0
+7fa5e4f2c000-7fa5e4f38000 r-xp 00000000 fd:02 134256181                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibapi.so.0.0.0
+7fa5e4f38000-7fa5e5137000 ---p 0000c000 fd:02 134256181                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibapi.so.0.0.0
+7fa5e5137000-7fa5e5138000 r--p 0000b000 fd:02 134256181                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibapi.so.0.0.0
+7fa5e5138000-7fa5e5139000 rw-p 0000c000 fd:02 134256181                  /home/fdio/vpp/build-root/install-vpp-native/vpp/lib64/libvlibapi.so.0.0.0
+7fa5e5139000-7fa5e5159000 r-xp 00000000 fd:01 184551014                  /usr/lib64/ld-2.17.so
+7fa5e5207000-7fa5e523a000 rw-s 00000000 00:11 459983                     /run/.vpp_config
+7fa5e523a000-7fa5e5341000 rw-p 00000000 00:00 0 
+7fa5e5352000-7fa5e5358000 rw-p 00000000 00:00 0 
+7fa5e5358000-7fa5e5359000 r--p 0001f000 fd:01 184551014                  /usr/lib64/ld-2.17.so
+7fa5e5359000-7fa5e535a000 rw-p 00020000 fd:01 184551014                  /usr/lib64/ld-2.17.so
+7fa5e535a000-7fa5e535b000 rw-p 00000000 00:00 0 
+7fffd7618000-7fffd7639000 rw-p 00000000 00:00 0 
+7fffd7779000-7fffd777b000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+
+# top -H -p $(pgrep vpp)
+top - 10:31:30 up 8 days, 18:01,  3 users,  load average: 2.00, 1.81, 1.08
+Threads:   6 total,   2 running,   4 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.0 us,  0.0 sy,  0.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 98619024 total, 67897136 free, 25412364 used,  5309516 buff/cache
+KiB Swap:        0 total,        0 free,        0 used. 72634528 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                                                      
+20783 root      20   0 3061656  65156   5116 R 99.9  0.1  11:37.29 vpp_wk_0                                                                                                     
+20784 root      20   0 3061656  65156   5116 R 99.9  0.1  11:37.31 vpp_wk_1                                                                                                     
+20780 root      20   0 3061656  65156   5116 S  0.3  0.1   0:03.87 vpp_main                                                                                                     
+20781 root      20   0 3061656  65156   5116 S  0.0  0.1   0:00.00 vfio-sync                                                                                                    
+20782 root      20   0 3061656  65156   5116 S  0.0  0.1   0:00.00 eal-intr-thread                                                                                              
+20785 root      20   0 3061656  65156   5116 S  0.0  0.1   0:00.00 vpp_stats 
+
+
+# ./vpp -c /etc/vpp/startup.conf
+vlib_plugin_early_init:360: plugin path /usr/lib/vpp_plugins
+load_one_plugin:188: Loaded plugin: acl_plugin.so (Access Control Lists)
+load_one_plugin:188: Loaded plugin: dpdk_plugin.so (Data Plane Development Kit (DPDK))
+load_one_plugin:188: Loaded plugin: flowperpkt_plugin.so (Flow per Packet)
+load_one_plugin:188: Loaded plugin: ila_plugin.so (Identifier-locator addressing for IPv6)
+load_one_plugin:188: Loaded plugin: ioam_plugin.so (Inbound OAM)
+load_one_plugin:114: Plugin disabled (default): ixge_plugin.so
+load_one_plugin:188: Loaded plugin: lb_plugin.so (Load Balancer)
+load_one_plugin:188: Loaded plugin: libsixrd_plugin.so (IPv6 Rapid Deployment on IPv4 Infrastructure (RFC5969))
+load_one_plugin:188: Loaded plugin: memif_plugin.so (Packet Memory Interface (experimetal))
+load_one_plugin:188: Loaded plugin: snat_plugin.so (Network Address Translation)
+EAL: Detected 20 lcore(s)
+EAL: Probing VFIO support...
+EAL: VFIO support initialized
+EAL: PCI device 0000:82:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:10fb net_ixgbe
+EAL: PCI device 0000:82:00.1 on NUMA socket 1
+EAL:   probe driver: 8086:10fb net_ixgbe
+DPDK physical memory layout:
+Segment 0: phys:0x35c00000, len:20971520, virt:0x7fa55ae00000, socket_id:0, hugepage_sz:2097152, nchannel:0, nrank:0
+Segment 1: phys:0x5a400000, len:247463936, virt:0x7fa546c00000, socket_id:0, hugepage_sz:2097152, nchannel:0, nrank:0
+Segment 2: phys:0x17e6400000, len:268435456, virt:0x7fa4dbc00000, socket_id:1, hugepage_sz:2097152, nchannel:0, nrank:0
+./vpp[20780]: dpdk_ipsec_process:241: DPDK Cryptodev support is disabled, default to OpenSSL IPsec
+./vpp[20780]: svm_client_scan_this_region_nolock:1139: /vpe-api: cleanup ghost pid 22750
+./vpp[20780]: svm_client_scan_this_region_nolock:1139: /global_vm: cleanup ghost pid 22750
+
+
+vpp# show version verbose
+Version:                  v17.04-release
+Compiled by:              root
+Compile host:             fpga
+Compile date:             Thu May 18 10:44:46 CST 2017
+Compile location:         /home/mwang/fdio/vpp
+Compiler:                 GCC 4.8.3 20140911 (Red Hat 4.8.3-9)
+Current PID:              20780
+vpp# show dpdk version
+DPDK Version:             DPDK 17.02.0
+DPDK EAL init args:       -c 3800 -n 4 --huge-dir /run/vpp/hugepages --file-prefix vpp -w 0000:82:00.0 -w 0000:82:00.1 --master-lcore 11 --socket-mem 256,256 
+vpp# 
