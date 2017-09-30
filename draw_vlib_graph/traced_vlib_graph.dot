@@ -1,0 +1,45 @@
+digraph traced_vlib_graph_nodes { 
+rankdir=LR;
+node [shape = circle, fixedsize=true];
+"dpdk-input" -> "error-drop"
+"dpdk-input" -> "ethernet-input"
+"dpdk-input" -> "ip4-input"
+"dpdk-input" -> "ip4-input-no-checksum"
+"dpdk-input" -> "ip6-input"
+"dpdk-input" -> "mpls-input"
+"ip4-icmp-echo-request" -> "ip4-load-balance"
+"ip4-icmp-input" -> "error-punt"
+"ip4-icmp-input" -> "ip4-icmp-echo-reply"
+"ip4-icmp-input" -> "ip4-icmp-echo-request"
+"ip4-icmp-input" -> "vpe-icmp4-oam"
+"ip4-input-no-checksum" -> "error-drop"
+"ip4-input-no-checksum" -> "error-punt"
+"ip4-input-no-checksum" -> "ip4-drop"
+"ip4-input-no-checksum" -> "ip4-icmp-error"
+"ip4-input-no-checksum" -> "ip4-lookup"
+"ip4-input-no-checksum" -> "ip4-mfib-forward-lookup"
+"ip4-local" -> "error-drop"
+"ip4-local" -> "error-punt"
+"ip4-local" -> "gre4-input"
+"ip4-local" -> "ip4-icmp-input"
+"ip4-local" -> "ip4-udp-lookup"
+"ip4-lookup" -> "ip4-arp"
+"ip4-lookup" -> "ip4-drop"
+"ip4-lookup" -> "ip4-glean"
+"ip4-lookup" -> "ip4-icmp-error"
+"ip4-lookup" -> "ip4-local"
+"ip4-lookup" -> "ip4-mcast-midchain"
+"ip4-lookup" -> "ip4-midchain"
+"ip4-lookup" -> "ip4-punt"
+"ip4-lookup" -> "ip4-rewrite"
+"ip4-lookup" -> "ip4-rewrite-mcast"
+"dpdk-input" [color=blue, style=filled]
+"ip4-input-no-checksum" [color=blue, style=filled]
+"ip4-lookup" [color=blue, style=filled]
+"ip4-local" [color=blue, style=filled]
+"ip4-icmp-input" [color=blue, style=filled]
+"ip4-icmp-echo-request" [color=blue, style=filled]
+"ip4-rewrite-local" [color=blue, style=filled]
+"TenGigabitEthernet89/0/0-output" [color=blue, style=filled]
+"TenGigabitEthernet89/0/0-tx" [color=blue, style=filled]
+}

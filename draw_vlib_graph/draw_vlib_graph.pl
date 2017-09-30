@@ -12,15 +12,17 @@
 ###############################################################################
 ### Author  : Michael WANG
 ### Date    : Jul. 28, 2016
-### Version : 0.1.0
+### Version : 0.1.2
 ###
 ### ChangeLogs:
+###   @Sep. 30, 2017  v0.1.2 by Michael: create traced nodes graph
 ###   @Sep. 23, 2017  v0.1.1 by Michael: aligned to vpp v17.07-release
 ###   @Jul. 28, 2016  v0.1.0 by Michael: Baselined
 ###   @Jul. 21, 2016  v0.0.1 by Michael: Created
 ###############################################################################
 #!/usr/bin/perl
 
+my $TOOL = "dot";
 my $VLIB_GRAPH_TXT = "";
 my $DOT_TMP = "dot.tmp";
 my $DOT_CFG = "vlib_graph.dot";
@@ -66,7 +68,7 @@ while (my $line = <TXT>) {
     $prev_len = 0;
 
     ### each node is separated by a blank line
-    if ($line ne "") {
+    if ($line !~ /^\s+$/) {
         #print "LINE: $line\n";
 
 =cut
@@ -85,13 +87,13 @@ arp-input    |                  error-drop [0]                l2-fwd
              |                         |                  ethernet-input
                                                                  | 
                                                                  | 
-1......................................40........................66
+1......................................37........................66
 <etc>
 =cut
         ### get each field if presented, at least one character 
         ### should be there 
         $name = substr($line, 1, 1);  # name of current node
-        $next = substr($line, 40, 1); # name of Next node
+        $next = substr($line, 37, 1); # name of Next node
         $prev = substr($line, 66, 1); # name of Previous node
 
         ### strip space
@@ -110,7 +112,7 @@ arp-input    |                  error-drop [0]                l2-fwd
         $next_node = "";
         $prev_node = "";
 
-        $line =~ s/(\[\d+\])//g;   # delete string looks like '[0]','[1]', etc
+        $line =~ s/(\s\[{0,1}\d+\]{0,1})//g;   # delete string looks like '[0]','[1]', etc
         $line =~ s/(^\s+|\s+$)//g; # strip heading&tailing space
 
         ### first line for this node(current node name presented on this line)
@@ -128,7 +130,7 @@ arp-input    |                  error-drop [0]                l2-fwd
                 print DOT_TMP "\"$curr_node\" -> \"$next_node\"\n";
             } elsif ($next_len == 0 && $prev_len > 0) {
                 ($curr_node, $prev_node) = split(/\s+/, $line);
-                
+
                 #print "case 3: $curr_node $next_node $prev_node\n";
                 print DOT_TMP "\"$prev_node\" -> \"$curr_node\"\n";
             } elsif ($next_len == 0 && $prev_len == 0) {
@@ -137,7 +139,7 @@ arp-input    |                  error-drop [0]                l2-fwd
                 #print "case 4: $curr_node $next_node $prev_node\n";
                 print DOT_TMP "\"$curr_node\" -> \"$curr_node\"\n";
 
-                print DOT_TMP "\"$curr_node\" [color=grey, style=filled]\n";
+                #print DOT_TMP "\"$curr_node\" [color=grey, style=filled]\n";
             }
         } elsif ($name_len == 0) { # second/following line for this node
             if ($next_len > 0 && $prev_len > 0) {
@@ -176,6 +178,8 @@ close INPUT;
 ###############################################################################
 ### sort and delete duplicated node connection
 `echo "digraph vlib_graph_nodes { " > $DOT_CFG`;
+`echo "rankdir=LR;" >> $DOT_CFG`;
+`echo "node [shape = circle, fixedsize=true];" >> $DOT_CFG`;
 `cat $DOT_TMP | sort -u >> $DOT_CFG && rm -f $DOT_TMP`;
 
 ### To label traced nodes manually
@@ -194,7 +198,6 @@ close INPUT;
 
 `echo "}" >> $DOT_CFG`;
 
-
 ### create pictures
 my $SVG = "vlib_graph.svg";
 my $PDF = "vlib_graph.pdf";
@@ -202,13 +205,58 @@ my $PNG = "vlib_graph.png";
 
 `rm -f $SVG $PDF $PNG`;
 
-`dot $DOT_CFG -Tsvg -o $SVG`;
-`dot $DOT_CFG -Tpdf -o $PDF`;
+`$TOOL $DOT_CFG -Tsvg -o $SVG`;
+`$TOOL $DOT_CFG -Tpdf -o $PDF`;
 
 ### perl ./draw_vlib_graph.pl ./show_vlib_graph.txt 
 ### dot: graph is too large for cairo-renderer bitmaps. Scaling by 0.990778 to fit
 ### 
 ### Why?
 ### Cairo's maximum bitmap size is 32767x32767 pixels
-`dot $DOT_CFG -Tpng -o $PNG`;
+#`$TOOL $DOT_CFG -Tpng -o $PNG`;
 
+###############################################################################
+### create sub vlib graph which the nodes traced
+###############################################################################
+my @traced_nodes = (
+    "dpdk-input",
+    "ip4-input-no-checksum",
+    "ip4-lookup",
+    "ip4-local",
+    "ip4-icmp-input",
+    "ip4-icmp-echo-request",
+    "ip4-rewrite-local",
+    "TenGigabitEthernet89/0/0-output",
+    "TenGigabitEthernet89/0/0-tx"
+);
+
+my $traced_dot = "traced_vlib_graph.dot";
+
+open(DOTCFG, "$DOT_CFG") or die("Could not open file:$!.\n");
+
+`echo "digraph traced_vlib_graph_nodes { " > $traced_dot`;
+`echo "rankdir=LR;" >> $traced_dot`;
+`echo "node [shape = circle, fixedsize=true];" >> $traced_dot`;
+
+while (my $dot_line = <DOTCFG>) {
+    chomp($dot_line);
+    foreach my $node (@traced_nodes) {
+        if ($dot_line =~ m/^\"$node\"/) {
+            `echo '$dot_line' >> $traced_dot`;
+            last;
+        }
+    }
+}
+
+`echo "}" >> $traced_dot`;
+
+close DOTCFG;
+
+### create pictures
+my $TRACED_SVG = "traced_vlib_graph.svg";
+my $TRACED_PDF = "traced_vlib_graph.pdf";
+
+`rm -f $TRACED_SVG $TRACED_PDF`;
+
+`$TOOL $traced_dot -Tsvg -o $TRACED_SVG`;
+`$TOOL $traced_dot -Tpdf -o $TRACED_PDF`;
